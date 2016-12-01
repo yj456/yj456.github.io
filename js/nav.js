@@ -1,0 +1,9 @@
+$(function(){
+	$('.catitmlst>li').hover(function(){
+		$(this).addClass('z');
+		$(this).find('.ctgcard').show();
+	},function(){
+		$(this).removeClass('z');
+		$(this).find('.ctgcard').hide();
+	})
+});

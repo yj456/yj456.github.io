@@ -1,0 +1,227 @@
+.topTabBox{
+	width: 100%;
+	height: 40px;
+	border-bottom: 2px solid #151515;
+}
+
+.topTabBox .topTab{
+	width: 1090px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.topTabBox .topTab .toplevel{
+	position: relative;
+	z-index: 89;
+	float: left;
+	width: 160px;
+	height: 40px;
+	background: #151515;
+	font-size: 14px;
+	color: #fff;
+	line-height: 40px;
+}
+
+.topTabBox .topTab .toplevel .topCats{
+	border-bottom: 2px solid #151515;
+}
+
+.topTabBox .topTab  .topCats .line{
+	display:inline-block;
+	width: 15px;
+	height: 12px;
+	margin: 0 8px 0 27px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst{
+	margin-top: -1px;
+	width: 160px;
+	height: 400px;
+	background: rgba(15,15,15,.8);
+	border-bottom: 1px solid #000;
+}
+
+.topTabBox .topTab .toplevel .catitmlsthide{
+	display: none;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li{
+	padding-left: 10px;
+	width: 150px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+	text-align: left;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li.z{
+	width: 147px;
+	padding-left: 7px;
+	background: #555;
+	border-left:3px solid #e32b64;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .icon2{
+	width: 20px;
+	height: 20px;
+	padding: 0 5px 0 14px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	white-space: nowrap;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .seg{
+	display: block;
+	position: relative;
+	bottom: 1px;
+	left: 0;
+	width: 140px;
+	height: 1px;
+	background: rgba(255,255,255,.05);
+}
+
+.topTabBox .topTab .toplevel .catitmlst li i{
+	display: inline-block;
+	vertical-align: middle;
+	color: #929496;
+	font-size: 19px;
+	width: 16px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard{
+	position: absolute;
+	z-index: 75;
+	top:42px;
+	left: 160px;
+	display: none;
+	width: 930px;
+	overflow: hidden;
+	height: 399px;
+	background: #fff;
+	border: 1px solid #333;
+	border-width: 0 1px 1px 0;
+	text-align: left;
+	color: #333;
+	cursor: auto;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist{
+	float: left;
+	margin: 10px 20px 20px 20px;
+	width: 610px;
+	height: 370px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem{
+	display: inline-block;
+	padding: 0;
+	margin: 0 25px 10px 5px;
+	vertical-align: top;
+	width: 270px;
+	height: auto;
+	line-height: normal;
+	overflow: hidden;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem p{
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem p .cats{
+	color:#333;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem .listn a{
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 8px 0 10px;
+	margin-top: 12px;
+	border-right: 1px solid #CCC;
+	font-size: 12px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem p .cats:hover{
+	text-decoration: underline;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem .listn a:hover{
+	text-decoration: underline;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem .listn a.meib{
+	border: 0;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .otglist .listitem .listn a.color{
+	color: #E31436;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .brandbox{
+	float: right;
+	margin-top: 0;
+	width: 245px;
+	height: 243px;
+	padding: 20px 17px 0;
+	background: #f6f6f6;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .brandbox a{
+	float: left;
+	padding: 0;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .brandbox a img{
+	width: 80px;
+	height: 80px;
+	border: 1px solid #EAEAEA;
+	margin: -1px 0 0 -1px;
+}
+
+.topTabBox .topTab .toplevel .catitmlst li .ctgcard .imgbox{
+	float: right;
+	margin-bottom: 0;
+	width: 244px;
+	height: 100px;
+	padding: 18px;
+	background: #f6f6f6;
+}
+
+.topTabBox .topTab .topCats .line i{
+	display: block;
+	height: 0;
+	border-top: 2px solid #ddd;
+	margin-bottom: 3px;
+}
+
+.topTabBox .topTab .nav{
+	float: left;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.topTabBox .topTab .nav li{
+	float: left;
+	line-height: 40px;
+	padding: 0 20px;
+}
+
+.topTabBox .topTab .nav li a{
+	font-size: 15px;
+	font-weight: bold;
+	color:#333;
+}
+
+.topTabBox .topTab .nav li a:hover{
+	color: #E31436;
+}

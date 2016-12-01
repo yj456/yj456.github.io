@@ -1,0 +1,164 @@
+.header{
+	width: 100%;
+	height: 100px;
+}
+
+.header .header-margin{
+	position: relative;
+	left: 0;
+	width: 1090px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.header .header-margin .logo{
+	display: block;
+	height: 80px;
+	padding-top: 20px;
+	width: 260px;
+}
+
+.header .header-margin .searchiptbox{
+	position: absolute;
+	top: 24px;
+	left: 343px;
+}
+
+.header .header-margin .searchiptbox .topsearch{
+	position: relative;
+	width: 510px;
+	height: 36px;
+	padding-left: 1px;
+	background-color: #333;
+	border-radius: 0 3px 3px 0;
+} 
+
+.header .header-margin .searchiptbox .topsearch .inpt{
+	float: left;
+	margin: 2px 1px;
+	padding: 4px 5px 4px 30px;
+	background-color: #fff;
+}
+
+.header .header-margin .searchiptbox .topsearch .inpt .topInput{
+	width: 423px;
+	height: 24px;
+	line-height: 24px;
+	border: 0;
+	font-size: 13px;
+}
+
+.header .header-margin .searchiptbox .topsearch .topBtn{
+	display: inline-block;
+	height: 36px;
+	width: 50px;
+	font-size: 19px;
+	line-height: 36px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0 3px 3px 0;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -490px -657px;
+}
+
+.header .header-margin .searchiptbox .topsearch .topS{
+	position: absolute;
+	display: block;
+	width: 14px;
+	height: 14px;
+	left: 10px;
+	top: 11px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -466px -667px;;
+}
+
+.header .header-margin .searchiptbox .topsearch .searchhint{
+	display: none;
+	position: absolute;
+	top: 36px;
+	left: 0;
+	width: 461px;
+	background: #fff;
+}
+
+.header .header-margin .searchiptbox .topsearch .searchhint ul{
+	padding: 6px 0px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.header .header-margin .searchiptbox .topsearch .searchhint ul li a{
+	display: block;
+	padding: 0 10px;
+	height: 28px;
+	padding: 0 10px;
+	line-height: 28px;
+	font-size: 12px;
+}
+
+.header .header-margin .searchiptbox .topsearch .searchhint ul li a:hover{
+	background:#cdcdcd;
+	color: #E31436;
+}
+
+.header .header-margin .searchiptbox .list{
+	line-height: 22px;
+	margin-top: 2px;
+	width: 461px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.header .header-margin .searchiptbox .list li{
+	float: left;
+}
+
+.header .header-margin .searchiptbox .list li .sap2{
+	margin: 0 10px;
+	color: #999;
+}
+
+.header .header-margin .searchiptbox .list li a{
+	color: #999;
+}
+
+.header .header-margin .searchiptbox .list li a:hover{
+	text-decoration: underline;
+}
+
+.header .header-margin .searchiptbox .list li .last{
+	color:#E31436;
+}
+
+.header .header-margin .gou{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 24px;
+	width: 108px;
+	height: 34px;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.header .header-margin .gou:hover{
+	background: #ddd;
+}
+
+.header .header-margin .gou .goutu{
+	display: inline-block;
+	width: 18px;
+	height: 35px;
+	background: url(../img/icon1.png) no-repeat center center;
+	background-position:-959px -202px;
+	vertical-align: middle;
+}
+
+.header .header-margin .gou .wen{
+	display: inline-block;
+	line-height: 35px;
+	height: 35px;
+	vertical-align: middle;
+}

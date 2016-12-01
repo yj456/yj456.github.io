@@ -1,0 +1,193 @@
+.foot{
+	width: 100%;
+	height: 511px;
+	border-top: 1px solid #eaeaea;
+	background: #fff;
+}
+
+.box{
+	width: 1090px;
+	height: 383px;
+	margin: 0 auto;
+}
+
+.box .btmlist{
+	padding: 40px 0;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.box .btmlist ul{
+	height: 44px;
+}
+
+.box .btmlist ul li{
+	float: left;
+	width: 272px;
+}
+
+.box .btmlist ul li .icon3{
+	display: block;
+	float: left;
+	width: 44px;
+	height: 44px;
+	margin-right: 12px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -751px 0;
+}
+
+.box .btmlist ul li .icon4{
+	background-position: -812px 0;
+}
+
+.box .btmlist ul li .icon5{
+	background-position: -873px 0;
+}
+
+.box .btmlist ul li .icon6{
+	background-position: -935px 0;
+}
+
+.box .btmlist ul li .tit{
+	display: block;
+	font-weight: bold;
+	line-height: 22px;
+	height: 22px;
+	font-size: 18px;
+}
+
+.box .btmlist ul li .desc{
+	display: block;
+	line-height: 22px;
+	height: 22px;
+	font-size: 14px;
+}
+
+
+.box .guideList{
+	padding: 40px 0 90px;
+}
+
+.box .guideList ul{
+	height: 128px;
+}
+
+.box .guideList ul li{
+	float: left;
+	width: 110px;
+	padding: 0 0 0 25px;
+	height: 128px;
+	border-left: 1px solid #eaeaea;
+}
+
+.box .guideList ul li.first{
+	width: 194px;
+	padding-right: 40px;
+	padding-left: 30px;
+	border:0;
+}
+
+.box .guideList ul li .logo1{
+	display: block;
+	width: 220px;
+	height: 42px;
+	line-height: 45px;
+	margin-bottom: 20px;
+	outline: none;
+	cursor: pointer;
+	background: url(../img/logo2.png) no-repeat;
+}
+
+.box .guideList ul li .guan{
+	height: 32px;
+}
+
+.box .guideList ul li .guan span{
+	display:block;
+	float: left;
+	vertical-align: middle;
+	line-height: 32px;
+}
+
+.box .guideList ul li .guan a{
+	position: relative;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+.box .guideList ul li .guan .icon7{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -752px -69px;
+}
+
+.box .guideList ul li .guan .icon8{
+	background-position: -796px -69px;
+}
+
+.box .guideList ul li .guan .icon9{
+	background-position: -840px -69px;
+}
+
+.box .guideList ul li dt{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	margin: -4px 0 10px;
+}
+
+.box .guideList ul li dd{
+	line-height: 24px;
+}
+
+.box .guideList ul li dd a{
+	color: #333;
+}
+
+.box .guideList ul li dd a:hover{
+	text-decoration: underline;
+}
+
+.box .guideList ul li p{
+	text-align: center;
+	font-size: 12px;
+}
+
+.bottom{
+	width: 100%;
+	height: 87px;
+	background: #333;
+	padding: 20px 0;
+	text-align: center;
+	line-height: 26px;
+	color: #c2c2c2;
+}
+
+.bottom a{
+	color: #c2c2c2;
+}
+
+.bottom a:hover{
+	text-decoration: underline;
+}
+
+.bottom a.jing:hover{
+	text-decoration: none;
+}
+
+.bottom .tup img{
+	height: 30px;
+	cursor: pointer;
+}
+
+.bottom .tup .tup1{
+	margin-top: 5px;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+}
+
+.bottom .tup .tup2{
+	margin: 5px 0 0 10px;
+}
