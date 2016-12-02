@@ -1,0 +1,287 @@
+.head{
+	width: 100%;
+	height: 100px;
+}
+
+.margin{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.loginlogo{
+	float: left;
+	width: 220px;
+	height: 42px;
+	margin-top: 29px;
+	background: url(../img/login1.png) no-repeat;
+}
+
+.rig{
+	float: right;
+	width: 504px;
+	height: 100px;
+}
+
+.loginbanner{
+	width: 100%;
+	height: 520px;
+	margin-bottom: 40px;
+	background: url(../img/login.jpg) no-repeat;
+	background-position: center top;
+}
+
+.foot{
+	width: 100%;
+	line-height: 26px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.foot a{
+	color: #666;
+}
+
+.foot a:hover{
+	color: #c2c2c2;
+}
+
+.foot span{
+	color: #666;
+	margin: 0 20px;
+}
+
+.f-tac .f-tac1{
+	margin-top: 5px;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+}
+
+.f-tac .f-tac2{
+	height: 30px;
+	margin: 5px 0 0 10px;
+	vertical-align: middle;
+}
+
+.loginBody{
+	position: relative;
+	width: 1000px;
+	height: 520px;
+	margin: 0 auto;
+}
+
+.loginBody>a{
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 109px;
+	width: 400px;
+	height: 280px;
+}
+
+.loginwrap{
+	position: absolute;
+	z-index: 2;
+	right: 168px;
+	top: 80px;
+	width: 350px;
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+	font-size: 12px;
+}
+
+.loginFrom{
+	float: left;
+}
+
+.loginwrap .q{
+	position: absolute;
+	left: 100%;
+	top: -1px;
+	width: 148px;
+	height: 100%;
+	border: 1px solid #eaeaea;
+	background-color: #fff;
+}
+
+.loginwrap .q a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/login3.jpg) no-repeat;
+	background-position: center center;
+}
+
+.loginwrap h2{
+	height: 24px;
+	padding: 27px 40px 10px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #333;
+}
+
+.loginFrom .loginbox{
+	width: 350px;
+	height: 212px;
+}
+
+.loginFrom .loginbox .input-n{
+	width: 270px;
+	height: 187px;
+	margin: 20px auto 0;
+}
+
+.loginFrom .formList{
+	padding: 0 40px 20px;
+	text-align: center;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.loginFrom .formList a{
+	color: #51B8F1;
+}
+
+.loginFrom .thirdpart{
+	border-top: 1px solid #eaeaea;
+	padding: 10px 0 10px 29px;
+	width: 320px;
+}
+
+.loginFrom .thirdpart li{
+	float: left;
+	line-height: 22px;
+	height: 22px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.loginFrom .thirdpart .text{
+	width: 122px;
+}
+
+.loginFrom .loginbox .input-n .user{
+	height: 36px;
+	border: 1px solid #c5cddb;
+}
+
+.loginFrom .loginbox .input-n .user .user-l{
+	float: left;
+	width: 16px;
+	padding: 0 9px;
+}
+
+.loginFrom .loginbox .input-n .user .user-l .user-img{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	margin-top: 8px;
+	background: url(../img/login6.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+.loginFrom .loginbox .input-n .user input{
+	float: left;
+	margin: 2px 0;
+	padding-left: 4px;
+	height: 30px;
+	width: 180px;
+	outline: none;
+	border: 0;
+	border-left: 1px solid #ccc;
+}
+
+.loginFrom .loginbox .input-n .user-r{
+	float: right;
+	padding: 0 10px;
+}
+
+.loginFrom .loginbox .input-n .user-r .r-img{
+	display: inline-block;
+	margin-top: 7px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/login7.png) no-repeat;
+	background-position: -147px -89px;
+	cursor: pointer;
+}
+
+
+.loginFrom .loginbox .input-n .pasw{
+	height: 36px;
+	border: 1px solid #c5cddb;
+	margin-top: 16px;
+}
+
+.loginFrom .loginbox .input-n .pasw .pasw-l{
+	float: left;
+	width: 16px;
+	padding: 0 9px;
+}
+
+.loginFrom .loginbox .input-n .pasw .pasw-l .pasw-img{
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	margin-top: 8px;
+	background: url(../img/login6.png) no-repeat;
+	background-position: 0px -30px;
+}
+
+.loginFrom .loginbox .input-n .pasw input{
+	float: left;
+	margin: 2px 0;
+	padding-left: 4px;
+	font-size: 14px;
+	height: 30px;
+	width: 180px;
+	outline: none;
+	border: 0;
+	border-left: 1px solid #ccc;
+}
+
+.loginFrom .loginbox .input-n .pasw-r{
+	float: right;
+	padding: 0 10px;
+}
+
+.loginFrom .loginbox .input-n .pasw-r .paswr-img{
+	display: inline-block;
+	margin-top: 7px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/login7.png) no-repeat;
+	background-position: -147px -89px;
+	cursor: pointer;
+}
+
+.loginFrom .loginbox .input-n .unlogin{
+	margin-top: 16px;
+	padding: 2px 0 9px 0;
+	height: 16px;
+	line-height: 16px;
+}
+
+.loginFrom .loginbox .input-n .ck{
+	margin-top: 16px;
+	margin-bottom: 12px;
+}
+
+.loginFrom .loginbox .input-n .ck a{
+	display: block;
+	width: 100%;
+	height: 44px;
+	cursor: pointer;
+	text-align: center;
+	color: #fff;
+	background: #E31436;
+	font-size: 18px;
+	line-height: 44px;
+}
+
+.loginFrom .loginbox .input-n .ck a:hover{
+	background: #F5345E;
+}

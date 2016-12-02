@@ -60,34 +60,149 @@ $(function(){
 		floorleft: $('.floorleft'),
 		floorlist: $('.floor-list'),
 		flooritem: $('.floor1'),
+		floorlist1: $('.floor-list1'),
+		topfixed: $('.topfixed'),
+		floorright: $('.floorright'),
+		scrolltop: $('.scrolltop'),
+		flag: true,
 		init: function(){
-			console.log(this.floorlist);
-			console.log(this.flooritem);
 			this.scroll();
+			this.switchFloor();
+			console.log(this.flooritem);
 		},
 		scroll: function(){
 			var that = this;
 			$(window).scroll(function(){
 				var scrollT = $(this).scrollTop();
 				console.log(scrollT);
-				if(scrollT >= 500){
-					that.floorleft.show();
-					/*that.floorleft.css({
-						display: 'block',
-						top:'572px'
-					});*/
+				
+				if(scrollT >= 100){
+					that.topfixed.show();
 				}
 				
-				if(scrollT <= 300){
-					that.floorleft.hide();
-					/*that.floorleft.css({
-						top:'572px'
-					});*/
+				if(scrollT <= 100){
+					that.topfixed.hide();
 				}
-			})
+				
+				if(scrollT >= 700){
+					that.floorright.css({
+						position: 'fixed'
+					});
+					that.floorleft.css({
+						position: 'fixed'
+					});
+				}
+				
+				if(scrollT <= 500){
+					that.floorright.css({
+						position: 'absolute'
+					});
+					that.floorleft.css({
+						position: 'absolute'
+					});
+				}
+			});
+		},
+		switchFloor: function(){
+			var that = this;
+			this.floorlist.click(function(){
+				that.flag = false;
+				
+				var t;
+				var sum = 0;
+				
+				if($(this).index() == 0){
+					t = 850;
+				}
+				
+				if($(this).index() == 1){
+					t = 1300;
+				}
+				
+				if($(this).index() == 2){
+					t = 1700;
+				}
+				
+				$('html,body').stop(true).animate({
+					scrollTop: t
+				},function(){
+					//自动滚动完成 改变标志
+					that.flag = true;
+				});
+				
+			});
+			
+			this.floorlist1.click(function(){
+				that.flag = false;
+				
+				var  t = that.flooritem.eq($(this).index()).offset().top - 50;
+				
+				$('html,body').stop(true).animate({
+					scrollTop: t
+				},function(){
+					//自动滚动完成 改变标志
+					that.flag = true;
+				});
+			});
+			
+			this.scrolltop.click(function(){
+				$('html,body').stop(true).animate({
+					scrollTop: 0
+				},function(){
+					//自动滚动完成 改变标志
+					that.flag = true;
+				});
+			});
 		}
 	}
 	
 	floor.init();
+	
+	
+	var inpt1 = $('.topfixedInpt');
+	var value = $('.t-nei');
+	
+	inpt1.on('input',function(){
+		var inpt1V = inpt1.val();
+		
+		if(inpt1V.length == 0){
+			value.hide();
+			return;
+		}
+		
+		value.show();
+		
+		$.ajax({
+			url:"http://suggest.taobao.com/sug?code=utf-8&",
+			data: {
+				q: inpt1V
+			},
+			dataType: 'jsonp',
+			success: function(data){
+				var cont = '';
+				for(var i in data.result){
+					cont += '<li>'
+						+		'<a href="#" >'+data.result[i][0]+'</a>'
+						+	'</li>';
+				}
+				value.html(cont);
+			}
+		});
+	});
+	
+	
+	var q = $('.qrcode');
+	var rNotice = $('.r-notice');
+	$('.app1').hover(function(){
+		q.show();
+	},function(){
+		q.hide();
+	});
+	
+	$('.checkin').hover(function(){
+		rNotice.show();
+	},function(){
+		rNotice.hide();
+	})
 });
 

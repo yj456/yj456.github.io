@@ -30,8 +30,8 @@ $(function(){
 			if(this.next >= this.img.length){
 				this.next = 0;
 			}
-			this.img.eq(this.now).fadeOut(500);
-			this.img.eq(this.next).fadeIn(500);
+			this.img.eq(this.now).stop(true).fadeOut(500);
+			this.img.eq(this.next).stop(true).fadeIn(500);
 			
 			this.now = this.next;
 			
@@ -86,8 +86,8 @@ $(function(){
 				$(this).addClass('bgc');
 				$(this).siblings().removeClass('bgc');
 				
-				that.img.eq(that.now).fadeOut(500);
-				that.img.eq($(this).index()).fadeIn(500);
+				that.img.eq(that.now).stop(true).fadeOut(500);
+				that.img.eq($(this).index()).stop(true).fadeIn(500);
 				that.now = $(this).index();
 			});
 			

@@ -4,6 +4,7 @@
 }
 
 .main1{
+	position: relative;
 	width: 100%;
 	height: 100%;
 	background: #f6f6f6;
@@ -787,13 +788,12 @@
 
 
 .floorleft{
-	display: none;
-	position: fixed;
+	position: absolute;
 	width: 88px;
 	background: #fff;
 	z-index: 99;
 	left: 0;
-	top: 66px;
+	top: 65px;
 	border-left: 0;
 }
 
@@ -866,4 +866,222 @@
 .floorleft .floorleft-b img{
 	width: 100%;
 	border: 0;
+}
+
+
+.topfixed{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 1001;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0px 10px rgba(0,0,0,.2);
+}
+
+
+.topfixed .logokao{
+	float: left;
+	margin-top: 10px;
+	width: 220px;
+	height: 28px;
+	background: url(../img/logo2.png) no-repeat;
+}
+
+.topfixed .topfixed-n{
+	position: relative;
+}
+
+.topfixed .searchiptbox{
+	position: absolute;
+	top: 7px;
+	left: 343px;;
+	width: 511px;
+	height: 32px;
+	border: 2px solid #333;
+}
+
+.topfixed .searchiptbox .topfixedBtn{
+	float: right;
+	width: 50px;
+	height: 100%;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -490px -657px;
+	background-color: #333;
+}
+
+.topfixed .searchiptbox .topfixedInpt{
+	float: left;
+	margin: 2px 1px;
+	padding: 4px 5px 2px 30px;
+	background-color: #fff;
+	width: 423px;
+	height: 24px;
+	line-height: 24px;
+	border: 0;
+	font-size: 13px;
+}
+
+.topfixed .searchiptbox .t-icon{
+	position: absolute;
+	left: 10px;
+	top: 11px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -466px -667px;
+}
+
+.topfixed .searchiptbox .t-nei{
+	display: none;
+	position: absolute;
+	left: -2px;
+	top: 34px;
+	width: 461px;
+	border: 1px solid #EAEAEA;
+	border-top: 0;
+	background: #fff;
+	padding: 5px 0;
+}
+
+.topfixed .searchiptbox .t-nei li{
+	padding: 0 10px;
+	width: 441px;
+	line-height: 24px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.topfixed .searchiptbox .t-nei li:hover{
+	background: #EAEAEA;
+}
+
+.floorright{
+	position: absolute;
+	right: 5px;
+	top: 66px;
+	width: 60px;
+	border: 1px solid #eaeaea;
+	background: #fff;
+}
+
+.floorright a{
+	display: block;
+	width: 60px;
+	height: 48px;
+	padding: 10px 0 0;
+	border-bottom: 1px solid #eaeaea;
+	background: #fff;
+	font-size: 12px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.iconfont{
+	color: #999;
+	font-size: 17px;
+}
+
+.floorright a span{
+	display: block;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.floorright a:hover{
+	color: #E01F35;
+	background: #EAEAEA;
+}
+
+.floorright a:hover .r-notice{
+	color:#000
+}
+
+.floorright .scrolltop{
+	padding-top: 3px;
+	height: 33px;
+	border: 0;
+	line-height: 14px;
+	font-size: 10px;
+	background: #999;
+}
+
+.floorright .scrolltop .icon-shangsanjiao{
+	color: #fff;
+}
+
+.floorright .scrolltop>span{
+	color: #fff;
+}
+
+.floorright .scrolltop:hover{
+	opacity: 0.8;
+	background: #999;
+}
+
+.floorright .app1{
+	position: relative;
+}
+
+.floorright .app1 .qrcode{
+	display: none;
+	position: absolute;
+	left: -110px;
+	top: -20px;
+	width: 105px;
+	height: 142px;
+	background: url(../img/right.jpg) no-repeat;
+}
+
+.floorright .checkin{
+	position: relative;
+}
+
+.floorright .checkin .r-notice{
+	display: none;
+	position: absolute;
+	left: -100px;
+	top: 10px;
+	width: 66px;
+	border-radius: 4px;
+	background: #fff;
+	padding: 10px;
+}
+
+.floorright .checkin .r-notice .text{
+	display: block;
+	line-height: 16px;
+}
+
+.floorright .checkin .r-notice .arrow{
+	position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.floorright .checkin .r-notice .arrow .ar1{
+	position: absolute;
+	right: -18px;
+	border-width: 9px;
+	border-style: dashed dashed dashed solid;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0 !important;
+	border-color: transparent transparent transparent #ededee;
+}
+
+.floorright .checkin .r-notice .arrow .ar2{
+	position: absolute;
+	right: -17px;
+	border-width: 9px;
+	border-style: dashed dashed dashed solid;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0 !important;
+	border-color: transparent transparent transparent #fff;
 }
