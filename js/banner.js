@@ -61,7 +61,6 @@ $(function(){
 				clearInterval(that.timer);
 				that.arleft.mousedown(function(){
 					that.next--;
-					console.log(that.next);
 					that.imgSwitch();
 				});
 			},function(){
@@ -74,7 +73,6 @@ $(function(){
 				clearInterval(that.timer);
 				that.arright.mousedown(function(){
 					that.next++;
-					console.log(that.next);
 					that.imgSwitch();
 				});
 			},function(){
