@@ -130,7 +130,6 @@
 
 .loginFrom .loginbox .input-n{
 	width: 270px;
-	height: 187px;
 	margin: 20px auto 0;
 }
 
@@ -284,4 +283,121 @@
 
 .loginFrom .loginbox .input-n .ck a:hover{
 	background: #F5345E;
+}
+
+.loginFrom .loginbox .input-n .unlogin span{
+	display: block;
+	float: left;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	border: solid 1px #aaa;
+	color: #999;
+}
+
+.loginFrom .loginbox .input-n .unlogin span input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	opacity: 0;
+	outline: none;
+}
+
+.loginFrom .loginbox .input-n .unlogin .check-select{
+	background: url(../img/login7.png) no-repeat;
+	background-position: -330px -92px;
+}
+
+.loginFrom .loginbox .input-n .unlogin label{
+	display: block;
+	float: left;
+	height: 16px;
+	padding-left: 8px;
+	font-size: 12px;
+	color: #999;
+	line-height: 17px;
+	cursor: pointer;
+}
+
+.loginFrom .loginbox .input-n .unlogin label:hover{
+	color: #666;
+}
+
+
+.loginFrom .loginbox .input-n .unlogin a{
+	float: right;
+	height: 12px;
+	text-decoration: none;
+	cursor: pointer;
+	color: #999;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.loginFrom .loginbox .input-n .unlogin a:hover{
+	color: #666;
+}
+
+.loginFrom .thirdpart .wx{
+	width: 43px;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loginFrom .thirdpart .wx a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -760px -275px;
+}
+
+.loginFrom .thirdpart .wx{
+	width: 43px;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loginFrom .thirdpart .wx a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -760px -275px;
+}
+
+.loginFrom .thirdpart .zfb{
+	width: 43px;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loginFrom .thirdpart .zfb a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -760px -300px;
+}
+
+.loginFrom .thirdpart .xl{
+	width: 43px;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loginFrom .thirdpart .xl a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -760px -330px;
+}
+
+.loginFrom .thirdpart .qq{
+	width: 43px;
+}
+
+.loginFrom .thirdpart .qq a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon1.png) no-repeat;
+	background-position: -760px -356px;
 }
