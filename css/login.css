@@ -125,7 +125,6 @@
 
 .loginFrom .loginbox{
 	width: 350px;
-	height: 212px;
 }
 
 .loginFrom .loginbox .input-n{
@@ -194,6 +193,7 @@
 }
 
 .loginFrom .loginbox .input-n .user-r{
+	display: none;
 	float: right;
 	padding: 0 10px;
 }
@@ -243,6 +243,7 @@
 }
 
 .loginFrom .loginbox .input-n .pasw-r{
+	display: none;
 	float: right;
 	padding: 0 10px;
 }
@@ -400,4 +401,28 @@
 	height: 20px;
 	background: url(../img/icon1.png) no-repeat;
 	background-position: -760px -356px;
+}
+
+.nerror{
+	display: none;
+	margin-top: 16px;
+}
+
+.nerror .ferrorhead{
+	display: inline-block;
+	overflow: hidden;
+	margin-top: -3px;
+	color: #fa5b5b;
+	font-size: 12px;
+	line-height: 20px;
+	vertical-align: top;
+	word-break: break-all;
+}
+
+.nerror .ferrortail{
+	display: inline-block;
+	height: 15px;
+	width: 18px;
+	background: url(../img/login7.png) no-repeat;
+	background-position: -217px -34px;
 }

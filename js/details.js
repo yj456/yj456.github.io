@@ -33,7 +33,6 @@ $(function(){
 				$(this).addClass('active');
 				$(this).siblings().removeClass('active');
 				
-				console.log($(this).index());
 				var cont = '<img src="img/m'+($(this).index() + 1)+'.jpg" />';
 				that.showImg.find('.item').html(cont);
 				that.bigImg.html(cont);
@@ -140,4 +139,113 @@ $(function(){
 	xuan.init();
 	
 	
+	var cat = {
+		main: $('.PInfo'),
+		size: $('.tit9'),
+		sub: $('.sub'),
+		add: $('.add'),
+		data: {},
+		stack: 1000,
+		init: function(){
+			this.initData();
+		},
+		initData: function(){
+			var that = this;
+			var gid = this.main.attr('data-gid');
+			$.getJSON('js/data.json',function(res){
+				that.data = res[gid];
+				console.log(that.data);
+				
+				that.sizeClick();
+				
+				that.increate();
+				
+				that.decreate();
+				
+				that.input();
+				
+				that.addCart();
+			})
+		},
+		sizeClick: function(){
+			this.size.on('click','a',function(){
+				$(this).addClass('active5').siblings().removeClass('active5');
+			});
+		},
+		increate: function(){
+			var that = this;
+			
+			this.add.on('click',function(){
+				var cont = parseInt($('.ctrnum-qty').val());
+				
+				if(cont >= that.stack){
+					return;
+				}
+				cont++;
+				$('.ctrnum-qty').val(cont);
+			});
+		},
+		decreate: function(){
+			var that = this;
+			
+			this.sub.click(function(){
+				var cont1 = parseInt($('.ctrnum-qty').val());
+				
+				if(cont1 <= 1){
+					return;
+				}
+				
+				cont1--;
+				
+				$('.ctrnum-qty').val(cont1);
+			});
+		},
+		input: function(){
+			var that = this;
+			
+			$('.ctrnum-qty').on('input',function(){
+				var con = parseInt($(this).val());
+				
+				console.log(con)
+				
+				if(con <= 0 || isNaN(con)){
+					$(this).val(1);
+					return;
+				}
+				
+				if(con >= that.stack){
+					$(this).val(that.stack);
+					return;
+				}
+				
+				$(this).val(con);
+			});
+		},
+		addCart: function(){
+			var that= this;
+			$('.addcart').click(function(){
+				var gid = that.main.data('gid');
+				var sizeId = that.size.find('.active5').data('size');
+				var amount = parseInt($('.ctrnum-qty').val());
+				console.log(amount);
+				console.log(sizeId);
+				var cook = $.cookie('kl-cart') || '{}';
+				cook = JSON.parse(cook);
+				if(!cook[sizeId]){
+					cook[sizeId] ={
+						"goods-id": gid,
+						"size-id": sizeId,
+						"amount": amount
+					}
+				}else{
+					cook[sizeId].amount += amount;
+				}
+				
+				$.cookie('kl_cart',JSON.stringify(cook),{expires:365,path: '/'});
+				
+				alert(1);
+			});
+		}
+	}
+	cat.init();
 });
