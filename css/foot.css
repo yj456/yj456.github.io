@@ -1,6 +1,6 @@
 .foot{
 	width: 100%;
-	height: 511px;
+	-height: 511px;
 	border-top: 1px solid #eaeaea;
 	background: #fff;
 }
@@ -190,4 +190,9 @@
 
 .bottom .tup .tup2{
 	margin: 5px 0 0 10px;
+}
+
+
+.dis{
+	display: none;
 }

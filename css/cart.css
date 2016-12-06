@@ -1,0 +1,430 @@
+.header{
+	width: 100%;
+	height: 100px;
+}
+.header .logo2{
+	width: 1090px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.header a{
+	float: left;
+	width: 220px;
+	height: 42px;
+	margin-top: 29px;
+	background: url(../img/login1.png) no-repeat;
+}
+
+.main{
+	width: 1090px;
+	margin: 0 auto;
+}
+
+.main-t{
+	margin-top: 15px;
+	height: 32px;
+	line-height: 32px;
+}
+
+.t-l{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+}
+
+.t-r{
+	float: right;
+}
+
+.cart-main .cart-title{
+	width: 1088px;
+	height: 34px;
+	border: 1px solid #eaeaea;
+	color: #999;
+}
+
+.cart-title li{
+	float: left;
+}
+
+.cart-title .col{
+	padding: 0 10px;
+	width: 114px;
+}
+
+.cart-title .col input{
+	width: 17px;
+	height: 18px;
+	display: inline-block;
+	margin: 10px 10px 0 12px;
+	vertical-align: -6px;
+}
+
+.cart-title .col label{
+	line-height: 34px;
+	color: #000;
+}
+
+.cart-title .colo2{
+	width: 396px;
+	line-height: 34px;
+	color: #999;
+}
+
+.cart-title .colo3{
+	width: 132px;
+	line-height: 34px;
+	color: #999;
+}
+
+.cart-title .colo4{
+	width: 120px;
+	line-height: 34px;
+	color: #999;
+}
+
+.cart-title .colo5{
+	width: 100px;
+	line-height: 34px;
+	color: #999;
+}
+
+.cart-title .colo6{
+	width: 110px;
+	padding: 0 7px;
+	line-height: 34px;
+	color: #999;
+}
+
+.m-cart{
+	margin-top: 15px;
+	color: #000;
+	border: 1px solid #EAEAEA;
+	width: 1088px;
+}
+
+.m-cart li{
+	float: left;
+	height: 120px;
+}
+
+
+.m-cart .kl-check{
+	width: 37px;
+	padding-left: 10px;
+}
+
+.m-cart .kl-check input{
+	width: 17px;
+	height: 18px;
+	display: inline-block;
+	margin: 50px 10px 0 12px;
+}
+
+.m-cart .kl-gname{
+	width: 425px;
+	padding-right: 80px;
+	padding-top: 20px;
+	height: 100px;
+}
+
+.m-cart .kl-gname>a{
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+
+.m-cart .kl-gname .txt{
+	margin-left: 20px;
+	float: left;
+	width: 310px;
+}
+
+.m-cart .kl-gname .txt h3 a{
+	display: block;
+	font-size: 14px;
+	font-weight: 300;
+	color: #333;
+	height: 36px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.m-cart .kl-gname .txt h3 p{
+	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+	height: 20px;
+	padding-top: 5px;
+}
+
+.m-cart .kl-price{
+	width: 102px;
+	padding: 25px 10px 0;
+	height: 95px;
+}
+
+.m-cart .kl-price del{
+	display: block;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.m-cart .kl-price .goods-price{
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	color: #333;
+}
+
+.m-cart .kl-price .tj{
+	display: inline-block;
+	padding: 0 8px;
+	border: 1px solid #e31436;
+	margin: 3px 0 0;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #e31436;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+.m-cart  .kl-gamount{
+	width: 152px;
+	padding: 50px 10px 0;
+	height: 70px;
+}
+
+.m-cart  .kl-gamount .amount-wrapper{
+	width: 87px;
+	height: 22px;
+	border: 1px solid #EAEAEA;
+}
+
+.m-cart  .kl-gamount .amount-decrease{
+	float: left;
+	width: 21px;
+	height: 22px;
+	text-align: center;
+	cursor: pointer;
+	border-right: 1px solid #EAEAEA;
+}
+.m-cart  .kl-gamount .amount-input{
+	float: left;
+	width: 43px;
+	height: 22px;
+	border: 0;
+	text-align: center;
+}
+
+.m-cart  .kl-gamount .amount-increase{
+	float: left;
+	width: 21px;
+	height: 22px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #EAEAEA;
+}
+
+.m-cart .kl-gmoney{
+	width: 100px;
+	line-height: 120px;
+}
+
+.m-cart .kl-gmoney span{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.m-cart .kl-option{
+	width: 110px;
+	padding: 0 7px;
+}
+
+.m-cart .kl-option a{
+	display: block;
+	color: #333;
+	cursor: pointer;
+	line-height: 120px;
+	height: 25px;
+}
+
+.cart-option{
+	margin-top: 15px;
+	width: 1088px;
+	border: 1px solid #eaeaea;
+	background: #F8F8F8;
+}
+
+.cart-option .options{
+	float: left;
+	height: 40px;
+	margin: 10px 10px;
+	line-height: 40px;
+}
+
+.cart-option .options .options-item{
+	float: left;
+}
+
+.cart-option .options .options-item input{
+	width: 18px;
+	height: 17px;
+	vertical-align: -5px;
+}
+
+.delete{
+	margin-left: 20px;
+}
+
+.cart-info{
+	float: right;
+}
+
+.cart-info .info-item{
+	float: left;
+}
+
+.go-pay{
+	width: 120px;
+	height: 61px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #ccc;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: -1px;
+	margin-right: -1px;
+}
+
+.cart-info .goods-money{
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.cart-info .goods-money .user-goods-money{
+	font-size: 26px;
+    color: #f40;
+    padding: 0 5px;
+}
+
+.cart-info .goods-amount{
+	margin-left: 20px;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+.cart-info .goods-amount .user-goods-amount{
+	font-size: 26px;
+    color: #f40;
+    padding: 0 5px;
+}
+
+.newsWraper{
+	margin: 15px 0;
+	width: 1090px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.newsWraper h3{
+	font-weight: bold;
+	height: 38px;
+	line-height: 38px;
+	color: #333;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.newsWraper h3 b{
+	padding-left: 14px;
+	font-size: 14px;
+	color: #999;	
+}
+
+.newsWraper ul{
+	width: 110%;
+}
+
+.newsWraper li{
+	float: left;
+	width: 204px;
+	height: 304px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #EAEAEA;
+}
+
+.newsWraper li>a{
+	display: block;
+	
+}
+
+.newsWraper li>a img{
+	width: 204px;
+	height: 204px;
+}
+
+.newsWraper li>p{
+	margin-bottom: 9px;
+	padding: 0 15px;
+	height: 40px;
+	overflow: hidden;
+}
+
+.newsWraper li>p>a{
+	line-height: 20px;
+	font-size: 12px;
+	color: #333;
+	font-weight: normal;
+}
+
+.newsWraper li>p>a:hover{
+	text-decoration: underline;
+}
+
+.newsWraper li .pri{
+	padding: 0 15px;
+}
+
+.newsWraper li .price{
+	line-height: 14px;
+	color: #E31436;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.newsWraper li .price>span{
+	padding-left: 5px;
+	color: #999;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.newsWraper li .price>span del{
+	text-decoration: line-through;
+	color: #999;
+}
+
+.newsWraper li .pri>a{
+	display: block;
+	height: 24px;
+	line-height: 20px;
+	color: #999;
+	font-size: 12px;
+}
+
+.newsWraper li .pri>a:hover{
+	text-decoration: underline;
+}
+
+.can-pay{
+	background: #e31436;
+}

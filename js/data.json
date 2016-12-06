@@ -3,7 +3,7 @@
 		"goods-id": 10001,
 		"goods-name": "MO&Co.经典翻领双排扣工装口袋军装中长款风衣外套MA1631TRC07 moco",
 		"goods-price": 1699.00,
-		"goods-sale": 1699.00,
+		"goods-sale": 899.00,
 		"size": {
 			"1000101": "S",
 			"1000102": "M",
@@ -13,7 +13,8 @@
 			"id": "10001001",
 			"small-pic": "img/yan.jpg",
 			"large-pic": "img/yan.jpg"
-		}
+		},
+		"stock": 9861
 	},
 	"10002": {
 		"goods-id": 10001,
