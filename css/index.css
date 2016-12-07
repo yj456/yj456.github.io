@@ -1085,3 +1085,19 @@
 	line-height: 0 !important;
 	border-color: transparent transparent transparent #fff;
 }
+
+.day-t .timebox{
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+.day-t .timebox i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+}

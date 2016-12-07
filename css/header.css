@@ -162,3 +162,21 @@
 	height: 35px;
 	vertical-align: middle;
 }
+
+
+.header .header-margin .gou b{
+	position: absolute;
+	top: 6px;
+	right: 4px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #fff;
+	background: #E31436;
+	opacity: 0;
+}

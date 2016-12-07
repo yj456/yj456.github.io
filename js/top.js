@@ -34,4 +34,26 @@ $(function(){
 	},function(){
 		$('.notice').hide();
 	});
+	
+	
+	if($.cookie('username')){
+	   $('.wei').css({
+	   		display: 'none'
+	   });
+	   $('.deng').css({
+	   		display: 'inline-block'
+	   });
+	   $('.deng').find('i').html($.cookie('username'));
+	}
+	
+	$('.tuic').click(function(){
+		$.removeCookie('username',{path:'/'});
+		$.removeCookie('password',{path:'/'});
+		$('.wei').css({
+	   		display: 'inline-block'
+		});
+		$('.deng').css({
+	   		display: 'none'
+	    });
+	})
 });

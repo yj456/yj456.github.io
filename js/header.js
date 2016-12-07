@@ -27,4 +27,14 @@ $(function(){
 			}
 		})
 	});
+	
+	if($.cookie('kl_cart')){
+		$('.gou').find('b').css({
+			opacity:1
+		});
+	}else{
+		$('.gou').find('b').css({
+			opacity:0
+		});
+	}
 });

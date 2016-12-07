@@ -18,6 +18,14 @@
 	float: left;
 }
 
+.topNav .topNavWrap .topLeft .wei{
+	display: inline-block;
+}
+
+.topNav .topNavWrap .topLeft .deng{
+	display: none;
+}
+
 .topNav .topNavWrap .topLeft .login{
 	margin-left: 16px;
 }

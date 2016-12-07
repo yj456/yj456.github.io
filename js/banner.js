@@ -42,8 +42,12 @@ $(function(){
 			var that = this;
 			this.imgWraper.hover(function(){
 				clearInterval(that.timer);
+				that.arleft.show();
+				that.arright.show();
 			},function(){
 				that.autoPlay();
+				that.arleft.hide();
+				that.arright.hide();
 			});
 		},
 		circle: function(){
@@ -57,27 +61,24 @@ $(function(){
 		},
 		left: function(){
 			var that = this;
-			this.arleft.hover(function(){
+			this.arleft.mousedown(function(){
 				clearInterval(that.timer);
-				that.arleft.mousedown(function(){
-					that.next--;
-					that.imgSwitch();
-				});
-			},function(){
-				that.autoPlay();
+				$(this).show();
+				that.arright.show();
+				that.next--;
+				that.imgSwitch();
 			});
 		},
 		right: function(){
 			var that = this;
-			this.arright.hover(function(){
+			this.arright.mousedown(function(){
 				clearInterval(that.timer);
-				that.arright.mousedown(function(){
-					that.next++;
-					that.imgSwitch();
-				});
-			},function(){
-				that.autoPlay();
+				$(this).show();
+				that.arleft.show();
+				that.next++;
+				that.imgSwitch();
 			});
+			
 		},
 		mousedown:function(){
 			var that = this;

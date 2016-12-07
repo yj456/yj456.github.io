@@ -203,6 +203,43 @@ $(function(){
 		rNotice.show();
 	},function(){
 		rNotice.hide();
-	})
+	});
+	
+	var timebox = $('.timebox');
+	var time1 = $('.time1').html();
+	var time2 = $('.time2').html();
+	var time3 = $('.time3').html();
+	var time4 = $('.time4').html();
+	var time5 = $('.time5').html();
+	var timer2 = setInterval(function(){
+		time5--;
+		if(time5 == 0){
+			time5 = 9;
+			time4--;
+			if(time4 == 0){
+				time4 = 5;
+				time3--;
+				if(time3 == 0){
+					time3 = 9;
+					time2--;
+					if(time2 == 0){
+						time2 = 5;
+						time1--;
+						if(time1 == 0){
+							time1= 0;
+							clearInterval(timer2);
+						}
+					}
+				}
+			}
+		}
+		
+		$('.time1').html(time1);
+		$('.time2').html(time2);
+		$('.time3').html(time3);
+		$('.time4').html(time4);
+		$('.time5').html(time5);
+	},1000);
+	
 });
 

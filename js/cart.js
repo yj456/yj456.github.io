@@ -14,6 +14,7 @@ $(function(){
 		con: $('.m-cart'),
 		init: function(){
 			this.readCookie();
+			console.log(JSON.stringify(this.cart));
 			var that = this;
 			
 			$.getJSON('js/data.json?key='+Math.random(),function(data){
@@ -117,7 +118,11 @@ $(function(){
 			this.cart = JSON.parse(this.cart);
 		},
 		setCookie: function(){
-			$.cookie('kl_cart',JSON.stringify(this.cart),{expires:365,path:'/'});
+			if(JSON.stringify(this.cart) == '{}'){
+				$.removeCookie('kl_cart',{path:'/'});
+			}else{
+				$.cookie('kl_cart',JSON.stringify(this.cart),{expires:365,path:'/'});	
+			}
 		},
 		handleCookie: function(inp){
 			var goodsItem = inp.parents('.cart-goods-item');

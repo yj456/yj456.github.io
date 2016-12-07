@@ -106,6 +106,8 @@ $(function(){
 					 	$.removeCookie('username',{path:'/'});
 					 	$.removeCookie('password',{path:'/'});
 					 }
+					 
+					location.href='index.html';
 				});
 				
 				this.paswR.find('.paswr-img').click(function(){

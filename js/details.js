@@ -229,7 +229,7 @@ $(function(){
 				var amount = parseInt($('.ctrnum-qty').val());
 				console.log(amount);
 				console.log(sizeId);
-				var cook = $.cookie('kl-cart') || '{}';
+				var cook = $.cookie('kl_cart') || '{}';
 				cook = JSON.parse(cook);
 				if(!cook[sizeId]){
 					cook[sizeId] ={
@@ -243,9 +243,35 @@ $(function(){
 				
 				$.cookie('kl_cart',JSON.stringify(cook),{expires:365,path: '/'});
 				
-				alert(1);
 			});
 		}
 	}
 	cat.init();
+	
+	
+	$('.addcart').on('click',addCart);
+	
+	function  addCart(e){
+		var  offset = $('.gou').offset();
+		var flyer = $('<img class="u-flyer" src="img/x.jpg"/>');
+		
+		flyer.fly({
+		    start: {
+		        left: e.pageX,
+		        top: e.pageY
+		    },
+		    end: {
+		        left: offset.left,
+		        top: offset.top,
+		        width: 20,
+		        height: 20,
+		    }
+		});
+		
+		$('.gou').find('b').css({
+			opacity: 1
+		});
+	}
+	
+	
 });
