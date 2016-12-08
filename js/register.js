@@ -242,6 +242,11 @@ $(function(){
 	$('.btn').click(function(){
 		if(flag_p && flag_p1 && flag_ph && flag_t && flag_u){
 			alert('注册成功');
+	
+			/*$.cookie('username1',user,{expires:10,path: '/'});
+			console.log([$.cookie('username1')])
+			$.cookie('password',$('.p-inpt').val(),{expires:10,path: '/'});
+			location.href='login.html';*/
 		}
 	});
 	

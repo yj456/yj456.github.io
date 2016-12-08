@@ -20,7 +20,7 @@ $(function(){
 			$.getJSON('js/data.json?key='+Math.random(),function(data){
 				
 				that.data = data;
-				
+				console.log(that.data);
 				for(var key in that.cart){
 					
 					(function(k){
@@ -60,6 +60,7 @@ $(function(){
 				
 				var amount = $(this).prev().val();
 				var gid = $(this).parents('.cart-goods-item').data('gid');
+				console.log($(this).parents('.cart-goods-item').data());
 				var stack = that.data[gid].stack;
 				
 				if(amount >= stack){

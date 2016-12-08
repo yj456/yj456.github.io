@@ -241,5 +241,15 @@ $(function(){
 		$('.time5').html(time5);
 	},1000);
 	
+	
+	$('.tg').click(function(){
+		$('.opan').hide();
+		$('.fold').show();
+	});
+	
+	$('.hotarea15').click(function(){
+		$('.fold').hide();
+		$('.opan').show();
+	});
 });
 

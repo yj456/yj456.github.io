@@ -225,3 +225,18 @@
 .topTabBox .topTab .nav li a:hover{
 	color: #E31436;
 }
+
+.res{
+	display: inline-block;
+	position: absolute;
+	right: 50%;
+	margin: -68px -545px 0 0;
+	width: 168px;
+	height: 68px;
+	z-index: 105;
+}
+
+.res img{
+	width: 168px;
+	height: 68px;
+}

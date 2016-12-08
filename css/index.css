@@ -1101,3 +1101,132 @@
 	text-align: center;
 	line-height: 20px;
 }
+
+.guang{
+	position: fixed;
+	bottom: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+.guang1{
+	height: 90px;
+	width: 1127px;
+	margin: 0 auto;
+}
+
+.opan{
+	-display: none;
+	height: 90px;
+	width: 1127px;
+	background: url(../img/iwfp.jpg.png) no-repeat;
+}
+
+.tg{
+	display: inline-block;
+	position: absolute;
+	left: 1167.5px;
+	top: 10px;
+	width: 23px;
+	height: 74px;
+}
+
+.hotarea{
+	display: inline-block;
+	position: absolute;
+	left: 195.5px;
+	top: 8px;
+	width: 76px;
+	height: 76px;
+}
+
+.hotarea:hover{
+	opacity: 0.2;
+	background: #fff;
+}
+
+.hotarea1{
+	left: 271.5px;
+	width: 81px;
+}
+
+.hotarea2{
+	left: 353px;
+	width: 79px;
+}
+
+.hotarea3{
+	left: 432px;
+	width: 80px;
+}
+
+.hotarea4{
+	left: 512px;
+	width: 81px;
+}
+
+.hotarea5{
+	left: 593px;
+	width: 79px;
+}
+
+.hotarea6{
+	left: 672px;
+	width: 84px;
+}
+
+.hotarea7{
+	left: 756px;
+	width: 63px;
+}
+
+.hotarea8{
+	left: 819px;
+	width: 58px;
+}
+
+.hotarea9{
+	left: 877px;
+	width: 50px;
+}
+
+.hotarea10{
+	left: 927px;
+	width: 59px;
+}
+
+.hotarea11{
+	left: 986px;
+	width: 76px;
+}
+
+.hotarea12{
+	left: 1062px;
+	width: 80px;
+}
+
+.hotarea13{
+	left: 74px;
+	width: 77px;
+}
+
+.fold{
+	display: none;
+	width: 119px;
+	height: 90px;
+	background: url(../img/iwf2.jpg.png) no-repeat;
+}
+
+.hotarea14{
+	left: 74px;
+	width: 77px;
+}
+
+.hotarea15{
+	display: inline-block;
+	position: absolute;
+	top:18px;
+	left: 161px;
+	width: 20px;
+	height: 52px;
+}

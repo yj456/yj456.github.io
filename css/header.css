@@ -74,6 +74,7 @@
 }
 
 .header .header-margin .searchiptbox .topsearch .searchhint{
+	z-index: 1000;
 	display: none;
 	position: absolute;
 	top: 36px;
