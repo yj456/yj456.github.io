@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>走秀网</title>
+	<meta name="viewport" content="width=	, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../js/dist/css/swiper.css">
+	<script type="text/javascript"  src="../js/dist/js/swiper.min.js"></script>
+	<script type="text/javascript"  src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript"  src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+	<script type="text/javascript">
+		$.get('/wechat',{
+			path:window.location.href.split('#')[0]
+		},function(e){
+			wx.config({
+			    debug: true, 
+			    appId: e.appId, // 必填，公众号的唯一标识
+			    timestamp: e.timestamp, // 必填，生成签名的时间戳
+			    nonceStr: e.noncestr, // 必填，生成签名的随机串
+			    signature: e.signature,// 必填，签名，见附录1
+			    jsApiList: [ "chooseImage"] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+			});
+		});
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		document.body.parentNode.style.fontSize = window.innerWidth+'px';
+	</script>
+	<div id="ani"  style="display:none">
+		<div class="swiper-container  div">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide  slide1"></div>
+				<div  class="swiper-slide  slide2"></div>
+				<div  class="swiper-slide  slide3"></div>
+				<div  class="swiper-slide  slide4"><a href="#home"></a></div>
+			</div>
+		</div>
+	</div>
+	<div id="home"  style="display:none">
+		<div class="header">ZXIU  走秀网</div>
+		<div class="search">
+			<input type="text"   class="inp"/>
+			<div class="tu"></div>
+		</div>
+		<div class="banner"></div>
+		<div class="main">
+			<div class="main-n  clear">
+				<div class="main-l"></div>
+				<div  class="main-r">
+					<h3>0元大抽奖！走秀携古尔莎为你</h3>
+					<h3>开启,价值28880元的土耳其...</h3>
+					<p>￥0<del>￥28880</del></p>
+					<span>0折</span>
+					<div class="cart"></div>
+				</div>
+			</div>
+			<div class="main-n  clear">
+				<div class="main-l"></div>
+				<div  class="main-r">
+					<h3>0元大抽奖！走秀携古尔莎为你</h3>
+					<h3>开启,价值28880元的土耳其...</h3>
+					<p>￥0<del>￥28880</del></p>
+					<span>0折</span>
+					<div class="cart"></div>
+				</div>
+			</div>
+			<div class="main-n  clear">
+				<div class="main-l"></div>
+				<div  class="main-r">
+					<h3>0元大抽奖！走秀携古尔莎为你</h3>
+					<h3>开启,价值28880元的土耳其...</h3>
+					<p>￥0<del>￥28880</del></p>
+					<span>0折</span>
+					<div class="cart"></div>
+				</div>
+			</div>
+			<div class="main-n  clear">
+				<div class="main-l"></div>
+				<div  class="main-r">
+					<h3>0元大抽奖！走秀携古尔莎为你</h3>
+					<h3>开启,价值28880元的土耳其...</h3>
+					<p>￥0<del>￥28880</del></p>
+					<span>0折</span>
+					<div class="cart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer  clear">
+			<div  class="footer-n  active">
+				<div class="tu1"></div>
+				<span>首页</span>
+			</div>
+			<div  class="footer-n">
+				<div class="tu1  tu2"></div>
+				<span>分类</span>
+			</div>
+			<div  class="footer-n">
+				<div class="tu1   tu3"></div>
+				<span>购物</span>
+			</div>
+			<a href="#myshow">
+				<div  class="footer-n">
+					<div class="tu1    tu4"></div>
+					<span>我的秀</span>
+				</div>
+			</a>
+			<div  class="footer-n  footer-n1">
+				<div class="tu1    tu5"></div>
+				<span>更多</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="myshow"  style="display:none">
+		<div class="header  header-t">
+		我的秀
+		<a  href="#home" class="pre"></a>
+		</div>
+
+		<div  class="my-main">
+			<div class="mymain-t  clear">
+				<div class="tleft"></div>
+				<div class="tright"></div>
+			</div>
+			<div class="mymain-m">
+				<div class="m-t  clear">
+					<div  class="mleft">我的订单</div>
+					<div  class="mright"></div>
+				</div>
+				<div class="m-t  clear">
+					<div  class="mleft">我的优惠卷</div>
+					<div  class="mright"></div>
+				</div>
+				<div class="m-t  clear">
+					<div  class="mleft">浏览记录</div>
+					<div  class="mright"></div>
+				</div>
+				<div class="m-t  m-t1  clear">
+					<div  class="mleft">我的收藏</div>
+					<div  class="mright"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer  clear">
+			<a href="#home">
+				<div  class="footer-n">
+					<div class="tu1"></div>
+					<span>首页</span>
+				</div>
+			</a>
+			<div  class="footer-n">
+				<div class="tu1  tu2"></div>
+				<span>分类</span>
+			</div>
+			<div  class="footer-n">
+				<div class="tu1   tu3"></div>
+				<span>购物</span>
+			</div>
+			<div  class="footer-n  active">
+				<div class="tu1    tu4"></div>
+				<span>我的秀</span>
+			</div>
+			<div  class="footer-n  footer-n1">
+				<div class="tu1    tu5"></div>
+				<span>更多</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript"  src="../js/director.js"></script>
+	<script type="text/javascript"  src="../js/ani.js"></script>
+	<script type="text/javascript"  src="../js/home.js"></script>
+	<script type="text/javascript"  src="../js/myshow.js"></script>
+	<script type="text/javascript"  src="../js/route.js"></script>
+	<script type="text/javascript"  src="../js/index.js"></script>
+	<script type="text/javascript">
+		new Swiper('.div',{
+
+		});
+
+		var  tleft = $('.tleft');
+		tleft.click(function(){
+			wx.chooseImage({
+			    count: 1, // 默认9
+			    sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+			    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+			    success: function (res) {
+			        var localIds = res.localIds; // 返回选定照片的本地ID列表，localId可以作为img标签的src属性显示图片
+			    }
+			});
+		});
+	</script>
+</body>
+</html>
